@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Profile Viewer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="viewer">
-  <h1>
-    GitHub Explorer
-    <span>profile</span>
-  </h1>
-  <div class="subhead">
-    search for a github user → view their profile → click to open github
-  </div>
-
-  <div class="search-row">
-    <input type="text" id="usernameInput" placeholder="e.g. torvalds, gaearon, or your own" autocomplete="off" aria-label="GitHub username">
-    <button id="searchBtn" aria-label="Search">
-      🔍 <span>search</span>
-    </button>
-  </div>
-
-  <div id="statusMessage" class="status"></div>
-
-  <div id="profileCard" class="profile-card">
-    <div class="profile-head">
-      <img id="avatarImg" class="avatar" src="" alt="avatar" loading="lazy">
-      <div class="name-box">
-        <h2 id="displayName">—</h2>
-        <div class="username">
-          <span id="usernameHandle">@—</span>
+    <div class="viewer">
+        <h1>
+            GitHub Explorer
+            <span>profile</span>
+        </h1>
+        <div class="subhead">
+            search for a github user → view their profile → click to open github
         </div>
-      </div>
+
+        <div class="search-row">
+            <input type="text" id="usernameInput" placeholder=" " autocomplete="off"
+                aria-label="GitHub username">
+            <button id="searchBtn" aria-label="Search">
+                 <span>search</span>
+            </button>
+        </div>
+
+        <div id="statusMessage" class="status"></div>
+
+        <div id="profileCard" class="profile-card">
+            <div class="profile-head">
+                <img id="avatarImg" class="avatar" src="" alt="avatar" loading="lazy">
+                <div class="name-box">
+                    <h2 id="displayName">—</h2>
+                    <div class="username">
+                        <span id="usernameHandle">@—</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bioText" class="bio">—</div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="reposCount">0</span>
+                    <span class="stat-label">repos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="followersCount">0</span>
+                    <span class="stat-label">followers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="followingCount">0</span>
+                    <span class="stat-label">following</span>
+                </div>
+            </div>
+
+
+            <a id="githubProfileLink" class="profile-link" href="#" target="_blank" rel="noopener noreferrer">
+                open on github <span class="arrow">↗</span>
+            </a>
+        </div>
     </div>
-
-    <div id="bioText" class="bio">—</div>
-
-    <div class="stats">
-      <div class="stat-item">
-        <span class="stat-number" id="reposCount">0</span>
-        <span class="stat-label">repos</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" id="followersCount">0</span>
-        <span class="stat-label">followers</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" id="followingCount">0</span>
-        <span class="stat-label">following</span>
-      </div>
-    </div>
-
-    
-    <a id="githubProfileLink" class="profile-link" href="#" target="_blank" rel="noopener noreferrer">
-      open on github <span class="arrow">↗</span>
-    </a>
-  </div>
-</div>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
