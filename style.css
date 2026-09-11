@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
   background: #f6f8fa;
   display: flex;
   flex-direction: column;
@@ -35,16 +35,6 @@ h1 {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-h1 span {
-  background: #0b1c2f;
-  color: white;
-  font-size: 1rem;
-  padding: 0.15rem 0.6rem;
-  border-radius: 30px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
 }
 
 .subhead {
@@ -235,14 +225,6 @@ h1 span {
   border-color: #99b9da;
 }
 
-.profile-link .arrow {
-  font-size: 1.1rem;
-  transition: transform 0.15s;
-}
-
-.profile-link:hover .arrow {
-  transform: translateX(4px);
-}
 
 .status {
   padding: 1rem 0 0.5rem 0;
